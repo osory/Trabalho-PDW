@@ -30,8 +30,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 .carousel-inner img {
-    width: 50%;
-    height: 50%;
+    width: 800px;
+    height: 400px;
   }
 </style>
 <body>
@@ -41,11 +41,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="main.php" class="w3-bar-item w3-button w3-padding-large w3-white">Hey, <?php echo htmlspecialchars($_SESSION["username"]); ?></a>
-    <a href="news.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">News</a>
-    <a href="top.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Top Games</a>
-    <a href="discussion.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Discussion</a>
-    <a href="contact.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact us</a>
-    <a href="reset-password.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Reset Password</a>
+    <a href="news.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Notícias</a>
+    <a href="top.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Jogos Populares</a>
+    <a href="discussion.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Discussões</a>
+    <a href="contact.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contactos</a>
+    <a href="reset-password.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Alterar Password</a>
     <a href="logout.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Logout</a>
   </div>
 
@@ -60,7 +60,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:100px 10px">
-  <h1 class="w3-margin w3-jumbo">Top Games</h1>
+  <h1 class="w3-margin w3-jumbo">Jogos Recomendados</h1>
 <div id="demo" class="carousel slide" data-ride="carousel">
 
   <!-- Indicators -->
@@ -73,14 +73,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/cyberpunk.jpg" alt="Cyberpunk" width="600" height="400">
+      <img src="images/cyberpunk.jpg" alt="Cyberpunk">
     </div>
     <div class="carousel-item">
-      <img src="images/tarkov.jpg" alt="Escape from Tarkov" width="600" height="400">
+      <img src="images/tarkov.jpg" alt="Escape from Tarkov">
     </div>
     <div class="carousel-item">
-      <img src="images/league.jpg" alt="League of Legends" width="600" height="400">
+      <img src="images/league.jpg" alt="League of Legends">
     </div>
+    
   </div>
   
   <!-- Left and right controls -->
@@ -97,7 +98,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Recent News</h1>
+      <h1>Novidades</h1>
       <h5 class="w3-padding-32">O lançamento distópico de Cyberpunk 2077</h5>
 
       <p class="w3-text-grey">Um dos videojogos mais esperados e importantes de 2020 chegou ao mercado e ergueu-se um coro de vozes críticas e descontentes. A CD Projekt Red tem em 2021 um ano para recuperar a sua reputação enquanto lida com uma comunidade desconfiada.</p>
@@ -118,12 +119,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
 
     <div class="w3-twothird">
-      <h1>Quem somos</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h1>Sobre Nós</h1>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="w3-text-grey">Este trabalho foi desenvolvido para a disciplina de Plataformas de Desenvolvimento Web a pedido do professor Sebastião Pais.
+      Nós somos alunos do curso de Informática Web na Universidade da Beira Interior. Temos como objetivo virarmos desenvolvedores profissionais, e neste momento estamos a tentar aprimorar várias técnicas e linguagens. Para isso desenvolvemos este projeto utilizando as linguagens PHP, HTML, um pouco de CSS, uma base de dados em MySQL e utilizamos ferramentas de bootstrap que encontramos na internet para melhorar este projeto. </p>
     </div>
   </div>
 </div>
